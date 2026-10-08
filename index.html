@@ -1,17 +1,132 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>House of Blooms</title><link rel='stylesheet' href='style.css'></head><body>
-<header><a class='brand' href='#home'><span class='mark'>h</span><span>house of blooms</span></a><button class='menu' aria-label='Open menu'>☰</button><nav><a href='#home'>Home</a><a href='#bouquets'>Bouquets</a><a href='#occasions'>Occasions</a><a href='#custom'>Custom</a><a href='#about'>About</a><a class='pill' href='#order'>Order</a></nav></header>
-<main id='home'>
-<section class='hero'><div class='hero-copy'><p class='eyebrow'>CUSTOM FLORAL ARRANGEMENTS · LAS PIÑAS & MUNTINLUPA</p><h1>Thoughtfully arranged.<br><em>Beautifully given.</em></h1><p class='lead'>Flowers for the moments you want to remember—made with a soft, personal touch. Bouquets from <strong>₱850</strong>.</p><div class='actions'><a class='btn primary' href='#bouquets'>Explore the collection</a><a class='btn' href='#order'>Order now</a></div></div><div class='hero-art'><img src='assets/lilac-kisses.jpg' alt='Lilac Kisses bouquet'><span>House of Blooms · 2026 Collection</span></div></section>
-<section class='intro' id='bouquets'><p class='eyebrow'>THE 2026 COLLECTION</p><h2>Flowers with a feeling.</h2><p>Five signature arrangements, each designed around a mood, a message, and a moment.</p></section>
-<section class='collection'>
-<article class='product'><div class='photo'><img src='assets/sunflower.jpg' alt='Sunflower and Fern'></div><div class='copy'><span class='code'>HOB-0226</span><h3>Sunflower + Fern</h3><p>Warm, confident and cheerful. A bouquet that celebrates clarity, strength and sunny spirit.</p><small>Sunflower · fern · greenery</small><a href='#order' data-product='Sunflower + Fern'>Order this bouquet →</a></div></article>
-<article class='product reverse'><div class='photo'><img src='assets/traditional-reds.jpg' alt='Traditional Reds'></div><div class='copy'><span class='code'>HOB-0326</span><h3>Traditional Reds</h3><p>A tribute to grand old love—rich red blooms symbolizing devotion, passion and enduring romance.</p><small>Carnation · Ecuadorian roses · mums · fern</small><a href='#order' data-product='Traditional Reds'>Order this bouquet →</a></div></article>
-<article class='product'><div class='photo'><img src='assets/lilac-kisses.jpg' alt='Lilac Kisses'></div><div class='copy'><span class='code'>HOB-0426</span><h3>Lilac Kisses</h3><p>Soft pinks and gentle lavenders in airy, feminine textures. Light, graceful and effortlessly pretty.</p><small>Gerbera · carnation · Ecuadorian roses · queen ann · gladiola</small><a href='#order' data-product='Lilac Kisses'>Order this bouquet →</a></div></article>
-<article class='product reverse'><div class='photo'><img src='assets/sunlit-blues.jpg' alt='Sunlit Blues'></div><div class='copy'><span class='code'>HOB-0526</span><h3>Sunlit Blues</h3><p>Cool blue tones with soft yellow accents—quiet strength, steady grace and a gentle glow through life's changes.</p><small>Hydrangea · eryngium · tulips</small><a href='#order' data-product='Sunlit Blues'>Order this bouquet →</a></div></article>
-<article class='product'><div class='photo'><img src='assets/summer-love.jpg' alt='Summer Love'></div><div class='copy'><span class='code'>HOB-0626</span><h3>Summer Love</h3><p>Fresh, playful and radiant—carefree days, warm smiles, and love that feels light, happy and alive.</p><small>Carnation · lisianthus · tulips · golden rod</small><a href='#order' data-product='Summer Love'>Order this bouquet →</a></div></article>
-</section>
-<section id='occasions' class='occasions'><p class='eyebrow'>FIND THE RIGHT BLOOM</p><h2>Made for your moment.</h2><div class='occasion-grid'><span>Birthday</span><span>Anniversary</span><span>Romance</span><span>Congratulations</span><span>Sympathy</span><span>Thank You</span><span>Just Because</span></div></section>
-<section id='custom' class='custom'><div><p class='eyebrow'>CUSTOM ARRANGEMENTS</p><h2>Have something else in mind?</h2></div><p>Tell us the occasion, preferred colors, flowers and budget. We'll create a bouquet that feels personal to the recipient.</p><a class='btn primary' href='#order'>Request a custom bouquet</a></section>
-<section id='about' class='about'><p class='eyebrow'>OUR STORY</p><h2>Small details.<br>Meaningful gestures.</h2><p>House of Blooms creates custom floral arrangements with a warm, thoughtful approach—serving Las Piñas and Muntinlupa.</p></section>
-<section id='order' class='order'><div><p class='eyebrow'>ORDER FLOW</p><h2>Send a little beauty.</h2><p>Complete the details below. This draft prepares an order message you can send to House of Blooms.</p></div><form id='orderForm'><label>Bouquet<select id='bouquet'><option>Sunflower + Fern</option><option>Traditional Reds</option><option>Lilac Kisses</option><option>Sunlit Blues</option><option>Summer Love</option><option>Custom Arrangement</option></select></label><label>Budget / Size<input id='budget' placeholder='e.g. ₱850–₱1,500'></label><label>Recipient<input id='recipient' placeholder='Recipient name'></label><label>Delivery or Pickup<select id='delivery'><option>Delivery</option><option>Pickup</option></select></label><label class='wide'>Notes<textarea id='notes' placeholder='Occasion, preferred date, colors, message card, address...'></textarea></label><button class='btn primary wide' type='submit'>Prepare order request</button><p id='result' class='wide result'></p></form></section>
-</main><footer><div class='brand'><span class='mark'>h</span><span>house of blooms</span></div><p>Custom floral arrangements · Las Piñas & Muntinlupa · Bouquets from ₱850</p><p>© 2026 House of Blooms</p></footer><script src='script.js'></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>House of Blooms — 2026 Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="#home"><span class="mark">h</span><span>house of blooms</span></a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#bouquets">Bouquets</a>
+    <a href="#about">About</a>
+    <a class="pill" href="https://www.instagram.com/h.house_of_blooms/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">HOUSE OF BLOOMS · 2026 COLLECTION</p>
+      <h1>Let beautiful things <em>unfold.</em></h1>
+      <p class="lead">A collection of thoughtfully composed bouquets, each with its own color story, flowers, and feeling.</p>
+      <div class="actions"><a class="btn primary" href="#bouquets">Explore the collection</a></div>
+    </div>
+    <div class="hero-art">
+      <img src="flowers/HOB-0426-lilac-kisses.png" alt="Lilac Kisses bouquet">
+      <span>@h.house_of_blooms</span>
+    </div>
+  </section>
+
+  <section class="intro" id="bouquets">
+    <p class="eyebrow">THE 2026 COLLECTION</p>
+    <h2>Flowers with a feeling.</h2>
+    <p>Seven House of Blooms arrangement concepts from the original collection cards.</p>
+  </section>
+
+  <section class="collection">
+    <article class="product">
+      <div class="photo"><img src="flowers/HOB-0126-assorted-bouquets.png" alt="HOB-0126 assorted bouquets"></div>
+      <div class="copy">
+        <span class="code">HOB-0126</span>
+        <h3>Assorted Rose / Gerbera + Chamomile</h3>
+        <p>Available color selections shown in the collection: red, blush, lavender, yellow, white, and orange.</p>
+        <small>Rose · gerbera · chamomile</small>
+      </div>
+    </article>
+
+    <article class="product reverse">
+      <div class="photo"><img src="flowers/HOB-0226-sunflower-and-fern.png" alt="Sunflower and Fern bouquet"></div>
+      <div class="copy">
+        <span class="code">HOB-0226</span>
+        <h3>Sunflower + Fern</h3>
+        <p>Sunflower radiates warmth and confidence. Bright, cheerful blooms paired with greenery reflect a personality that is effortlessly self-assured and optimistic.</p>
+        <p>A bouquet that celebrates clarity, strength, &amp; sunny spirit.</p>
+        <small>Sunflower · fern</small>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="photo"><img src="flowers/HOB-0326-traditional-reds.png" alt="Traditional Reds bouquet"></div>
+      <div class="copy">
+        <span class="code">HOB-0326</span>
+        <h3>Traditional Reds</h3>
+        <p>A tribute to grand old love, this lush arrangement overflows with rich red blooms—symbolizing devotion, passion, and enduring romance.</p>
+        <small>Carnation · Ecuadorian roses · Malaysian mums · fern</small>
+      </div>
+    </article>
+
+    <article class="product reverse">
+      <div class="photo"><img src="flowers/HOB-0426-lilac-kisses.png" alt="Lilac Kisses bouquet"></div>
+      <div class="copy">
+        <span class="code">HOB-0426</span>
+        <h3>Lilac Kisses</h3>
+        <p>Created for the modern woman drawn to pastels and dreamy romance, this bouquet features soft pinks and gentle lavenders layered in airy, feminine textures.</p>
+        <p>Light, graceful, and effortlessly pretty.</p>
+        <small>Gerbera · carnation · Ecuadorian roses · queen ann · gladiola</small>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="photo"><img src="flowers/HOB-0526-sunlit-blue.png" alt="Sunlit Blue bouquet"></div>
+      <div class="copy">
+        <span class="code">HOB-0526</span>
+        <h3>Sunlit Blue</h3>
+        <p>Sunlit Blues pairs cool blue tones with soft, yellow accents.</p>
+        <p>This arrangement reflects quiet strength &amp; steady grace. A thoughtful choice for honoring resilience, protection, and a gentle glow that persists through life’s changes.</p>
+        <small>Hydrangea · eryngium · tulips</small>
+      </div>
+    </article>
+
+    <article class="product reverse">
+      <div class="photo"><img src="flowers/HOB-0626-summer-love.png" alt="Summer Love bouquet"></div>
+      <div class="copy">
+        <span class="code">HOB-0626</span>
+        <h3>Summer Love</h3>
+        <p>Fresh, playful, and radiant, this arrangement captures the feeling of carefree days, warm smiles, and love that feels light, happy, and alive.</p>
+        <small>Carnation · lisianthus · tulips · golden rod</small>
+      </div>
+    </article>
+
+    <article class="product">
+      <div class="photo"><img src="flowers/HOB-0726-plum-and-evergreen.png" alt="Plum and Evergreen bouquet"></div>
+      <div class="copy">
+        <span class="code">HOB-0726</span>
+        <h3>Plum + Evergreen</h3>
+        <p>For the one who values elegance, this blends deep plum tones with grounding green texture.</p>
+        <p>An arrangement that reflects understated power and thoughtful restraint—slow to open, yet rich with feeling.</p>
+        <small>Anthurium · calla lily · orchid · anemone</small>
+      </div>
+    </article>
+  </section>
+
+  <section id="about" class="about">
+    <p class="eyebrow">HOUSE OF BLOOMS</p>
+    <h2>Some things say more when they bloom.</h2>
+    <p>Discover the collection and follow <strong>@h.house_of_blooms</strong> for House of Blooms updates.</p>
+    <p><small>NOTE: this is a mockup of the arrangement.</small></p>
+  </section>
+</main>
+
+<footer>
+  <div class="brand"><span class="mark">h</span><span>house of blooms</span></div>
+  <p>@h.house_of_blooms</p>
+  <p>© 2026 House of Blooms</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
